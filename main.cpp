@@ -47,7 +47,6 @@ Timer miTimer; //Timer para esperar 40 milisegundos
 
 int tiempoMs=0; //Almacena el tiempo del timmer una vez cumplido
 int parpadeo=0;//Almacena tiempo
-Serial pc(PA_9,PA_10);
 
 int main()
 {
@@ -74,7 +73,6 @@ int main()
                         if(ourButton[indice].timeDiff >= TIMETOSTART){
                             srand(miTimer.read_us());
                             estadoJuego=TECLAS;
-                            pc.printf("\r\n estadogame=teclita");
                         }
                     }
                 }
